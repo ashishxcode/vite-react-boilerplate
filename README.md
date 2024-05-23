@@ -1,10 +1,9 @@
-Great! Here's the updated README with the project name "vite-react-shadcn-boilerplate":
 
 ---
 
 # Vite React Shadcn Boilerplate
 
-CLI tool to scaffold a custom Vite React app setup.
+CLI tool to scaffold a create vite react app with tailwindcss and shadcn-ui.
 
 ## Installation
 
