@@ -1,21 +1,26 @@
 import { defineConfig } from "vite";
-import { resolve } from "path";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
+import path from "path";
+import { fileURLToPath } from "url";
 
-export default defineConfig(() => {
-    return {
-        server: {
-            port: 3003,
-            open: true,
+// Convert import.meta.url to a file path
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default defineConfig({
+    server: {
+        port: 3003,
+        open: true,
+    },
+    build: {
+        outDir: "build",
+    },
+    envPrefix: "REACT_APP_",
+    plugins: [react(), svgr({ svgrOptions: { icon: true } })],
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "./src"),
         },
-        build: {
-            outDir: "build",
-        },
-        envPrefix: "REACT_APP_",
-        plugins: [react(), svgr({ svgrOptions: { icon: true } })],
-        resolve: {
-            alias: [{ find: "~", replacement: resolve(__dirname, "./src") }],
-        },
-    };
+    },
 });
