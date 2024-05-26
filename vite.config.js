@@ -10,13 +10,8 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
     server: {
-        port: 3003,
-        open: true,
+        port: 3000,
     },
-    build: {
-        outDir: "build",
-    },
-    envPrefix: "REACT_APP_",
     plugins: [react(), svgr({ svgrOptions: { icon: true } })],
     resolve: {
         alias: {
