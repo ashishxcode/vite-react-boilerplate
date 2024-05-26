@@ -1,7 +1,7 @@
 
 ---
 
-# Vite React Shadcn Boilerplate
+# Vite React Boilerplate App
 
 CLI tool to scaffold a create vite react app with tailwindcss and shadcn-ui.
 
@@ -10,7 +10,7 @@ CLI tool to scaffold a create vite react app with tailwindcss and shadcn-ui.
 You can use this CLI tool with `npx` to create a new Vite React app setup:
 
 ```bash
-npx vite-react-shadcn-boilerplate <project-name>
+npx vite-react-starter-kit <project-name>
 ```
 
 ## Features
@@ -23,7 +23,7 @@ npx vite-react-shadcn-boilerplate <project-name>
 To create a new project, run the following command:
 
 ```bash
-npx vite-react-shadcn-boilerplate <project-name>
+npx vite-react-starter-kit <project-name>
 ```
 
 Replace `<project-name>` with the desired name for your new project.
@@ -37,7 +37,7 @@ npm run dev
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on [GitHub](https://github.com/ashishxcode/vite-react-shadcn-boilerplate).
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on [GitHub](https://github.com/ashishxcode/vite-react-starter-kit).
 
 ## License
 
