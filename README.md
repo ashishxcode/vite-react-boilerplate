@@ -1,7 +1,7 @@
 
 ---
 
-# Vite React Boilerplate App
+# Vite React Starter Kit
 
 CLI tool to scaffold a create vite react app with tailwindcss and shadcn-ui.
 
